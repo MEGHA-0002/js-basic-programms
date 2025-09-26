@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci Series</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script type="text/javascript">
+
+    // qn-1 fibanocci series
+    /*
+    
+    function fibonacci(n) {
+      let a = 0, b = 1;
+      console.log("Fibonacci series up to " + n + ":");
+
+      while (a <= n) {
+        console.log(a);   
+        let temp = a + b; 
+        a = b;            
+        b = temp;
+      }
+    }
+
+    let n = 50;
+    fibonacci(n);
+    */
+
+    // check prime number
+    /*
+
+    function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+    }
+    let n=parseInt(prompt("enter the number"));
+    document.getElementById("demo").innerHTML= isPrime(n);
+    */
+
+    // QN-3:PRINT PRIME NUMBER IN AN INTERVAL
+    /*
+    function printPrime(start,end){
+      for(let num=start;num<=end;num++){
+        if(isPrime(num)){
+          console.log(num);
+        }
+      }
+    }
+    function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+    }
+    let start=parseInt(prompt("enter the 1st interval"));
+    let end=parseInt(prompt("enter the 2nd interval"));
+    printPrime(start,end);
+    */
+
+    // qn4-find the factorial of a number
+    /*
+    function fact(n){
+      let facto=1;
+      for(let i=1;i<=n;i++){
+        facto*=i;
+
+    }
+    return facto;
+  }
+    let num=parseInt(prompt("enter the number"));
+    fact(num);
+    console.log(fact(num));
+    */
+
+    //qn-5 amstrong number
+    /*
+   function isArmstrong(num) {
+      let str = num.toString();
+      let power = str.length;
+      let sum = 0;
+      for (let digit of str) {
+        sum += Math.pow(Number(digit), power);
+      }
+      return sum === num;
+    }
+
+    let n = parseInt(prompt("Enter the number:"));
+    document.getElementById("demo").innerHTML =
+      isArmstrong(n) ? n + " is an Armstrong number" : n + " is NOT an Armstrong number ";
+      */
+
+      // qn-6:check whether two numbers have same last digit
+      /*
+      function sameLastDigit(a,b,c){
+        if(a%10==b%10 && b%10==c%10){
+          return true;
+        }
+        return false;
+
+      }
+      let a = parseInt(prompt("Enter the number:"));
+      let b= parseInt(prompt("Enter the number:"));
+      let c= parseInt(prompt("Enter the number:"));
+      document.getElementById("demo").innerHTML =sameLastDigit(a,b,c);
+      */
+
+      // qn-7:check whether a string is palindrome
+      /*
+      function isPalindrome(str){
+        let word = str.split("").reverse().join("");
+        if(word==str){
+          return true
+        }
+        return false;
+      }
+      let str=prompt("Enter the string");
+      document.getElementById("demo").innerHTML =isPalindrome(str)? "Palindrome " : "Not a Palindrom";
+      */
+
+   </script>
+</body>
+</html>
