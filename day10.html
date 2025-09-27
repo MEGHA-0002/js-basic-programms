@@ -120,7 +120,61 @@
       let str=prompt("Enter the string");
       document.getElementById("demo").innerHTML =isPalindrome(str)? "Palindrome " : "Not a Palindrom";
       */
+    // qn-8 reverse a string
+      /*
+      function rev(str){
+        let word=str.split("").reverse().join("");
+        return word;
+      }
+      
+       let str=prompt("Enter the string");
+       document.getElementById("demo").innerHTML=rev(str);
+      */
+      // qn-9 count vowels
+      /*
+      function vow(str){
+        let num=0;
+        let vowels=["a","e","i","o","u"];
+        for(let char of str.toLowerCase()){
+          if(vowels.includes(char)){
+            num++;
+          }
+        }
+        return num;   
+       
+      }
+      
+      let str=prompt("Enter the string");
+      document.getElementById("demo").innerHTML= "Number of vowels:" +vow(str);
+      */
+      // qn-10 a string contain substring 
+      /*
+      function checkSub(str,sub){
+        return str.includes(sub);
+      }
+      let mainStr=prompt("Enter the main string");
+      let subStr=prompt("Enter the sub string");
+      if(checkSub(mainStr,subStr)){
+        document.getElementById("demo").innerHTML=`The string ${mainStr} contain ${subStr}`;
+      }
+      else{
+        document.getElementById("demo").innerHTML=`The string ${mainStr} do not contain ${subStr}`;
+
+      }
+  */
+    // qn-11 random number
+    // random number between an interval
+    function getRandom(min,max){
+      min=Math.ceil(min);
+      max=Math.ceil(max);
+      return Math.floor(Math.random()*(max-min+1)+min);
+    }
+    let min=prompt("Enter the lowest interval");
+    let max=prompt("Enter the largest interval");
+    document.getElementById("demo").innerHTML =getRandom(min,max) ;
+
 
    </script>
 </body>
 </html>
+
