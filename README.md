@@ -11,7 +11,7 @@ This repository contains a collection of beginner-friendly JavaScript programs t
 6. Check if Numbers Have the Same Last Digit
 7. Check Whether a String is Palindrome or Not
 8. JavaScript Program to Reverse a String
-9.JavaScript Program to Count the Number of Vowels in a String
-10.JavaScript Program to Check Whether a String Contains a Substring
-11.Javascript Program to Generate a Random Number
+9. JavaScript Program to Count the Number of Vowels in a String
+10. JavaScript Program to Check Whether a String Contains a Substring
+11. Javascript Program to Generate a Random Number
 
